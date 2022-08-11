@@ -1,16 +1,19 @@
 ---
 galaxy_info:
-  author: Dmitry Razin
-  description: Role for Harbor deployment with the ability to preset users and tenats 
-  company: Personal project
-  role_name: harbor_ansible_role
-  namespace: one_mind
+  author: Sajjad Gerami
+  description: Role for managing a harbor instance
+  company: Lexoya.com
+  role_name: ansible_role_harbor
+  namespace: lexoya
 
   license: Apache
 
   min_ansible_version: 4
 
   platforms:
+    - name: Debian
+      versions:
+        - wheezy
     - name: Ubuntu
       versions:
         - focal

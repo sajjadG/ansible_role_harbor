@@ -1,5 +1,6 @@
 {
   "project_name": "{{ item.project_name }}",
+  "storage_limit": {{ item.storage_limit * 1073741824}},
   "metadata": {
     "public": "{{ item.public }}",
     {% if item.vulnerability_scanning is defined and item.vulnerability_scanning %}"auto_scan": "{{ item.vulnerability_scanning }}"{% endif %}
